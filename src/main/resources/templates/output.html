@@ -8,7 +8,7 @@
     <h1 th:text="#{content.title}"></h1>
     <h2 th:text="#{content.output}"></h2>
     <p th:text="'入力された値は「' + ${val} + '」です。'"></p>
-    <p><a th:href="@{http://localhost:8080/input(previous=${val})}">入力画面へ戻る</a></p>
+    <p><a th:href="@{http://localhost:8080/input(previous=${val})}" th:text="#{content.output.link}"></a></p>
 </body>
 </html>
 </html>

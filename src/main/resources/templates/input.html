@@ -11,7 +11,7 @@
     <p th:text="${message}"></p>
     <form method="post" action="/output">
         <input type="text" name="val">
-        <button type="submit">送信</button>
+        <button type="submit" th:text="#{content.input.button}"></button>
     </form>
 </body>
 </html>
